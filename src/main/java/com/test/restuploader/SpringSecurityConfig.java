@@ -34,6 +34,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .httpBasic()
                 .authenticationEntryPoint(authenticationEntryPoint);
+        http.csrf().disable();
     }
 
     @Bean
