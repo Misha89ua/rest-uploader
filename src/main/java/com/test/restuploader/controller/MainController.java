@@ -10,7 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 public class MainController {
 
-    @RequestMapping(value = "/", method = RequestMethod.POST, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @RequestMapping(value = "/upload", method = RequestMethod.POST, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<Object> uploadFile(@RequestParam (name = "file") MultipartFile file,
                                              @RequestParam(name = "author", required = false, defaultValue = "no author") String authorName,
                                              @RequestParam(name = "description", required = false, defaultValue = "no desription") String description){

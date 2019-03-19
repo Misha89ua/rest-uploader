@@ -1,0 +1,6 @@
+server:
+  servlet:
+    context-path: /testApi
+
+logging:
+  file: src/main/resources/logs/logfile.log
